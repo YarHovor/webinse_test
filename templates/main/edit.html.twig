@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Table Info{% endblock %}
+
+{% block body %}
+
+<br>
+{{ form_start(editForm, {'attr': {'novalidate': true}}) }}
+    {{ form_widget(editForm) }}
+
+        <button type="submit" class="btn btn-primary">
+            <i class="fas fa-save"> Сохранить</i></button>
+{{ form_end(editForm) }}
+
+{% endblock %}

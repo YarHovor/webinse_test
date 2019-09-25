@@ -1,0 +1,20 @@
+<table>
+    <tr>
+        <th>firstname</th>
+        <th>secondname</th>
+        <th>email</th>
+    </tr>
+    <tbody>
+    {% for main in mains %}
+    <tr>
+        <td>{{ main.firstname }}</td>
+        <td>{{ main.secondname }}</td>
+        <td>{{ main.email }}</td>
+        <td>
+        <a href="edit/{{ main.id }}">Edit</a> |
+        <a href="delete/{{ main.id }}" onclick="return confirm('Вы точно хотите удалить?');" >Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
