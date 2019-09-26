@@ -15,9 +15,11 @@
             <td>{{ main.secondname }}</td>
             <td>{{ main.email }}</td>
             <td>
-            <a href="edit/{{ main.id }}" class="btn btn-outline-info btn-sm">Edit</a>
-            <a href="delete/{{ main.id }}" onclick="return confirm('Вы точно хотите удалить?');"
-               class="btn btn-outline-danger btn-sm">Delete</a>
+
+              <a href="edit/{{ main.id }}" class="btn btn-outline-info btn-sm"><i class="fas fa-user-edit"> Edit</i></a>
+              <a href="delete/{{ main.id }}" onclick="return confirm('Вы точно хотите удалить?');"
+               class="btn btn-outline-danger btn-sm">
+                  <i class="fas fa-user-minus"> Delete</i></a>
             </td>
         </tr>
         {% endfor %}

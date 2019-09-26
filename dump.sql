@@ -37,7 +37,7 @@ CREATE TABLE `main` (
 
 LOCK TABLES `main` WRITE;
 /*!40000 ALTER TABLE `main` DISABLE KEYS */;
-INSERT INTO `main` VALUES (1,'Андрей','Костомаров','andr.kost@gmail.com'),(2,'Igor','Lysenko','igor@gmail.com'),(3,'fsdfsdgsdg','sdgsdgsgsd','sdgsg@efgg.com'),(4,'Igor','Deniel','jwjfgjwg@gmail.com'),(5,'Alex','Mich','alexmich@mail.ru'),(6,'Alex','Mich','alexmich@mail.ru'),(7,'Alex','Mich','alexmich@mail.ru'),(8,'ouiouio','uiouio','andr.kost@gmail.com'),(9,'ytyutyuty','tyutyuty','andr.kost@gmail.com'),(10,'ytyutyuty','tyutyuty','andr.kost@gmail.com'),(11,'ytyutyuty','tyutyuty','andr.kost@gmail.com'),(12,'ytyutyuty','tyutyuty','andr.kost@gmail.com'),(13,'rgerg','gerge','andr.kost@gmail.com'),(14,'rtert','terert','andr.kost@gmail.com');
+INSERT INTO `main` VALUES (1,'Андрей','Костомаров','andr.kost@gmail.com'),(2,'Igor','Lysenko','igor@gmail.com'),(3,'Igor','Bushmakin','igorekbush@gmail.com'),(7,'Alex','Mich','alexmich@mail.ru');
 /*!40000 ALTER TABLE `main` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -74,4 +74,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-09-26 21:19:47
+-- Dump completed on 2019-09-27  0:34:20
