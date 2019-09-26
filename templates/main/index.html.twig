@@ -4,15 +4,18 @@
 
 {% block body %}
 
-    {{ form_start(form) }}
+    <span id="js-post-form">
+    {{ form_start(form, {'attr': {'novalidate': true}}) }}
+    </span>
+
     {{ form_widget(form) }}
 
     <button type="submit">Send</button>
 
     {{ form_end(form)}}
 
+    <span id="js-post-table">
     {{ include('main/table.html.twig', {'mains': mains}) }}
+    </span>
 
-
-{#    {{ include('main/edit.html.twig', {'editForm': editForm}) }}#}
 {% endblock %}
