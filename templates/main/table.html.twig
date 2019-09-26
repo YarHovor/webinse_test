@@ -1,20 +1,26 @@
-<table>
-    <tr>
-        <th>firstname</th>
-        <th>secondname</th>
-        <th>email</th>
-    </tr>
-    <tbody>
-    {% for main in mains %}
-    <tr>
-        <td>{{ main.firstname }}</td>
-        <td>{{ main.secondname }}</td>
-        <td>{{ main.email }}</td>
-        <td>
-        <a href="edit/{{ main.id }}">Edit</a> |
-        <a href="delete/{{ main.id }}" onclick="return confirm('Вы точно хотите удалить?');" >Delete</a>
-        </td>
-    </tr>
-    {% endfor %}
-    </tbody>
-</table>
+<div class="container w-75 border rounded-sm mt-3 w-100-md">
+    <table class="table table-sm">
+        <thead class="table-borderless">
+        <tr>
+            <th class>First name</th>
+            <th>Second name</th>
+            <th>Email</th>
+            <th>Edit | Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for main in mains %}
+        <tr>
+            <td>{{ main.firstname }}</td>
+            <td>{{ main.secondname }}</td>
+            <td>{{ main.email }}</td>
+            <td>
+            <a href="edit/{{ main.id }}" class="btn btn-outline-info btn-sm">Edit</a>
+            <a href="delete/{{ main.id }}" onclick="return confirm('Вы точно хотите удалить?');"
+               class="btn btn-outline-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

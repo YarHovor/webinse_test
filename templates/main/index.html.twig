@@ -4,16 +4,19 @@
 
 {% block body %}
 
-    <span id="js-post-form">
-    {{ form_start(form, {'attr': {'novalidate': true}}) }}
-    </span>
+    <h2 class="text-center"> Fill in the form </h2>
+
+    <div class="row justify-content-center form-inline">
+    {{ form_start(form, {'attr': {'novalidate': true, 'id': 'js-post-form'}}) }}
 
     {{ form_widget(form) }}
 
-    <button type="submit">Send</button>
+    <br><button type="submit" class="btn btn-outline-success btn-sm btn-block">Send</button>
 
     {{ form_end(form)}}
+    </div>
 
+    <br>
     <span id="js-post-table">
     {{ include('main/table.html.twig', {'mains': mains}) }}
     </span>

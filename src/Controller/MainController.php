@@ -34,10 +34,11 @@ class MainController extends AbstractController
 
             }
 
+           /*
             if ($request->isXmlHttpRequest()) {
                 return $this->redirectToRoute('main');
             }
-
+*/
 
 
         $mains = $mainRepository->findAll();
