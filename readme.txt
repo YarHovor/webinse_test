@@ -10,3 +10,4 @@
     БД: db_wbns
 
     (настройка доступа в файле - .env ; 27 строка - DATABASE_URL=mysql://dev:dev@127.0.0.1:3306/db_wbns)
+5. Запуск встроенного в PHP веб-сервер - bin/console server:start
